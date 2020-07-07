@@ -1,0 +1,47 @@
+//Числа-вампиры
+for (int i = 1000; i < 10000; i++) {
+            int j = (int)(i * 0.001);
+            int k = (int)(i % 1000 * 0.01);
+            int n = (int)(i % 100 * 0.1);
+            int m = i % 10;
+
+            int jk = j * 10 + k;
+            int jn = j * 10 + n;
+            int jm = j * 10 + m;
+            int kj = k * 10 + j;
+            int kn = k * 10 + n;
+            int km = k * 10 + m;
+            int nj = n * 10 + j;
+            int nk = n * 10 + k;
+            int nm = n * 10 + m;
+            int mj = m * 10 + j;
+            int mk = m * 10 + k;
+            int mn = m * 10 + n;
+
+            if (
+                            (jk * jn == i) || (jk * jm == i) || (jk * kj == i) || 
+                            (jk * kn == i) || (jk * km == i) || (jk * nj == i) ||
+                            (jk * nk == i) || (jk * nm == i) || (jk * mj == i) ||
+                            (jk * mk == i) || (jk * mn == i) || (jn * jm == i) ||
+                            (jn * kj == i) || (jn * kn == i) || (jn * km == i) ||
+                            (jn * nj == i) || (jn * nk == i) || (jn * nm == i) ||
+                            (jn * mj == i) || (jn * mk == i) || (jn * mn == i) ||
+                            (jm * kj == i) || (jm * kn == i) || (jm * km == i) ||
+                            (jm * nj == i) || (jm * nk == i) || (jm * nm == i) ||
+                            (jm * mj == i) || (jm * mk == i) || (jm * mn == i) ||
+                            (kj * km == i) || (kj * nj == i) || (kj * nk == i) ||
+                            (kj * nm == i) || (kj * mj == i) || (kj * mk == i) ||
+                            (kj * mn == i) || (kn * kj == i) || (kn * km == i) ||
+                            (kn * nj == i) || (kn * nk == i) || (kn * nm == i) ||
+                            (kn * mj == i) || (kn * mk == i) || (kn * mn == i) ||
+                            (km * nj == i) || (km * nk == i) || (km * nm == i) ||
+                            (km * mj == i) || (km * mk == i) || (km * mn == i) ||
+                            (nj * nk == i) || (nj * nm == i) || (nj * mj == i) ||
+                            (nj * mk == i) || (nj * mn == i) || (nk * nm == i) ||
+                            (nk * mj == i) || (nk * mk == i) || (nk * mn == i) ||
+                            (nm * mj == i) || (nm * mk == i) || (nm * mn == i) ||
+                            (mj * mk == i) || (mj * mn == i)
+            ) {
+                System.out.println(i);
+            }
+        }
