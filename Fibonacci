@@ -1,0 +1,11 @@
+    static void Fibonacci(int i) {
+        int a = 0, b = 1, c, count = i;
+
+        System.out.print(1);
+        for (int m = 1; m < count; m++) {
+            c = a + b;
+            System.out.print(" " + c);
+            a = b;
+            b = c;
+        }
+    }
